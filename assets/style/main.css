@@ -1,0 +1,160 @@
+.container {
+    display: flex;
+    width: 979px;
+    margin: 0 auto;
+    margin-top: 146px;
+
+}
+
+.container__descricao {
+    margin-left: 73px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.container__icon-relogio {
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.container__icons {
+    margin: 45px 0 0 73px;
+    display: flex;
+    width: 630px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.container__hora {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+.container__ano {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+.container__botao {
+    display: flex;
+    margin: 26px 0 0 73px;
+}
+
+.botao {
+    padding: 15px 27px;
+    background-color: var(--cor-azul);
+    color: var(--cor-branca);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.botao__transparente {
+    background: #131318;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    margin-left: 21px;
+}
+
+@media screen and (max-width:768px) {
+    .container {
+        padding: 25px;
+    }
+
+    .container,
+    .container__icons {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .container {
+        margin-top: 120px;
+    }
+
+    .container__imagem img {
+        display: none;
+    }
+    .container__descricao,
+    .container__icons {
+        margin: 15px 0;
+    }
+    .container__descricao{
+        margin-top: 50px;
+    }
+    
+    .container__botao {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .container__hora,
+    .container__ano {
+        font-size: 15px;
+    }
+
+    .star {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container__descricao {
+        margin-top: 0;
+        font-size: 15px;
+    }
+    
+    .star {
+        width: 20px;
+    }
+
+    .botao {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container__descricao {
+        font-size: 15px;
+    }
+    
+    .star {
+        width: 20px;
+    }
+
+    .botao {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .container__descricao {
+        font-size: 15px;
+    }
+    
+    .star {
+        width: 20px;
+    }
+
+    .botao {
+        font-size: 12px;
+    }
+}

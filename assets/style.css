@@ -1,0 +1,23 @@
+@import url("../assets/style/header.css");
+@import url("../assets/style/main.css");
+
+
+:root {
+    --cor-amarela: #FFA800;
+    --cor-azul: #0072D2;
+    --cor-branca: #FFFFFF;
+    --cor-preta: #131318;
+    --fonte-principal: 'B612', sans-serif;
+    --fonte-secundaria: 'Open Sans', sans-serif;
+}
+
+
+body {
+    background: url(../assets/img/fundo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: var(--fonte-principal);
+    color: var(--cor-branca);
+}
