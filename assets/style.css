@@ -13,11 +13,39 @@
 
 
 body {
-    background: url(../assets/img/fundo.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
     font-family: var(--fonte-principal);
     color: var(--cor-branca);
 }
+
+
+body::before {
+    background: url("../assets/img/fundo.svg") no-repeat center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    filter: brightness(75%);
+    z-index: -1;
+    animation-name: animation;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes animation {
+    0% {
+      background-image: url("../assets/img/fundo.svg");
+    }
+  
+    50% {
+      background-image: url("../assets/img/fundo2.png");
+    }
+  
+    100% {
+      background-image: url("../assets/img/fundo.svg");
+    }
+  }
