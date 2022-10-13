@@ -27,7 +27,7 @@ body::before {
     width: 100vw;
     top: 0px;
     left: 0px;
-    filter: brightness(75%);
+    filter: brightness(45%);
     z-index: -1;
     animation-name: animation;
     animation-duration: 9s;
@@ -36,14 +36,15 @@ body::before {
 
   @keyframes animation {
     0% {
-      background-image: url("../assets/img/fundo.svg");
+      background-image: url("../assets/img/fundo.png");
     }
   
     50% {
       background-image: url("../assets/img/fundo2.png");
+      filter: brightness(65%);
     }
   
     100% {
-      background-image: url("../assets/img/fundo.svg");
+      background-image: url("../assets/img/fundo.png");
     }
   }
