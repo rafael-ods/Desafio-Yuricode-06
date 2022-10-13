@@ -13,8 +13,6 @@
 
 
 body {
-    overflow-x: hidden;
-    overflow-y: hidden;
     font-family: var(--fonte-principal);
     color: var(--cor-branca);
 }
